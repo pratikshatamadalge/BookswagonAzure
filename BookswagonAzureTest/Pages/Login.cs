@@ -1,16 +1,20 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
+using System.Configuration;
 using System.Threading;
 
 namespace BookswagonAzureTest.Pages
 {
 
-    class Login
+    public class Login
     {
+        readonly string Email = ConfigurationManager.AppSettings["email"];
+        readonly string Password = ConfigurationManager.AppSettings["password"];
+
         public IWebDriver driver;
         public Login(IWebDriver driver)
         {
-            this.driver = driver;
+            //this.driver = driver;
             PageFactory.InitElements(driver, this);   
         }
 
@@ -30,8 +34,8 @@ namespace BookswagonAzureTest.Pages
         {
             loginBtn.Click();
             Thread.Sleep(6000);
-            email.SendKeys("pratikshatamadalge@gmail.com");
-            password.SendKeys("9890046630");
+            email.SendKeys(Email);
+            password.SendKeys(Password);
             login.Click();
         }
     }

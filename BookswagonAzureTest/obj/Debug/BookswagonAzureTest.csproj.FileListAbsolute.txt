@@ -18,3 +18,4 @@ F:\VS\BookswagonAzureTest\BookswagonAzureTest\obj\Debug\BookswagonAzureTest.cspr
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\obj\Debug\BookswagonAzureTest.csproj.CopyComplete
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\obj\Debug\BookswagonAzureTest.dll
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\obj\Debug\BookswagonAzureTest.pdb
+F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\BookswagonAzureTest.dll.config
