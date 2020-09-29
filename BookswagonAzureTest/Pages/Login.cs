@@ -5,7 +5,6 @@ using System.Threading;
 
 namespace BookswagonAzureTest.Pages
 {
-
     public class Login
     {
         readonly string Email = ConfigurationManager.AppSettings["email"];
