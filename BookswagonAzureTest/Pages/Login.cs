@@ -14,7 +14,7 @@ namespace BookswagonAzureTest.Pages
             PageFactory.InitElements(driver, this);   
         }
 
-        [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Login')]")]
+        [FindsBy(How = How.LinkText, Using = "Login")]
         IWebElement loginBtn{ get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@name='ctl00$phBody$SignIn$txtEmail']")]
@@ -30,7 +30,7 @@ namespace BookswagonAzureTest.Pages
         {
             loginBtn.Click();
             Thread.Sleep(6000);
-            email.SendKeys("pratikshatamadalge");
+            email.SendKeys("pratikshatamadalge@gmail.com");
             password.SendKeys("9890046630");
             login.Click();
         }
