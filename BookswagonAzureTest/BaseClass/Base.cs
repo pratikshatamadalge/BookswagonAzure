@@ -11,7 +11,7 @@ namespace BookswagonAzureTest.BaseClass
         public void Setup()
         {
             ChromeOptions options = new ChromeOptions();
-            options.AddArguments("start-maximized", "--disable-notifications","headless");
+            options.AddArguments("start-maximized", "--disable-notifications");
             driver = new ChromeDriver(options);
             driver.Url = "https://www.bookswagon.com/";
         }

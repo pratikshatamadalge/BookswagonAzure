@@ -23,12 +23,16 @@ namespace BookswagonAzureTest.Pages
         [FindsBy(How = How.XPath, Using = "//input[@name='ctl00$phBody$SignIn$txtPassword']")]
         IWebElement password { get; set; }
 
+        [FindsBy(How = How.XPath, Using = "//input[@name='ctl00$phBody$SignIn$btnLogin']")]
+        IWebElement login { get; set; }
+
         public void LoginPage()
         {
             loginBtn.Click();
-            Thread.Sleep(4000);
+            Thread.Sleep(6000);
             email.SendKeys("pratikshatamadalge");
             password.SendKeys("9890046630");
+            login.Click();
         }
     }
 }
