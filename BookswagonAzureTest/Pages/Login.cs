@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace BookswagonAzureTest.Pages
 {
-    public class Login
+    class Login
     {
         readonly string Email = ConfigurationManager.AppSettings["email"];
         readonly string Password = ConfigurationManager.AppSettings["password"];
@@ -18,7 +18,7 @@ namespace BookswagonAzureTest.Pages
         }
 
         [FindsBy(How = How.XPath, Using = "//div[@id='header']//li[1]")]
-        IWebElement loginBtn{ get; set; }
+        IWebElement LoginBtn{ get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@name='ctl00$phBody$SignIn$txtEmail']")]
         IWebElement email { get; set; }
@@ -31,7 +31,7 @@ namespace BookswagonAzureTest.Pages
 
         public void LoginPage()
         {
-          //  loginBtn.Click();
+           // LoginBtn.Click();
             Thread.Sleep(6000);
             email.SendKeys(Email);
             password.SendKeys(Password);

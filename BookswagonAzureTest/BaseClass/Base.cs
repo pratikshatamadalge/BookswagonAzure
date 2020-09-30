@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using NUnit.Framework;
+using System;
 
 namespace BookswagonAzureTest.BaseClass
 {
@@ -13,7 +14,7 @@ namespace BookswagonAzureTest.BaseClass
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("start-maximized", "--disable-notifications");
             driver = new ChromeDriver(options);
-            driver.Url = "https://www.bookswagon.com/";
+            driver.Url = "https://www.bookswagon.com/login";
         }
 
         [OneTimeTearDown]
