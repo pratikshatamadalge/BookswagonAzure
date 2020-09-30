@@ -18,7 +18,7 @@ namespace BookswagonAzureTest.Pages
         }
 
         [FindsBy(How = How.XPath, Using = "//div[@id='header']//li[1]")]
-        IWebElement LoginBtn{ get; set; }
+        IWebElement LoginBtn1{ get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@name='ctl00$phBody$SignIn$txtEmail']")]
         IWebElement email { get; set; }
@@ -27,14 +27,14 @@ namespace BookswagonAzureTest.Pages
         IWebElement password { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@name='ctl00$phBody$SignIn$btnLogin']")]
-        IWebElement login { get; set; }
+        IWebElement LoginBtn2{ get; set; }
 
         public void LoginPage()
         {
             Thread.Sleep(6000);
             email.SendKeys(Email);
             password.SendKeys(Password);
-            login.Click();
+            LoginBtn2.Click();
         }
     }
 }
