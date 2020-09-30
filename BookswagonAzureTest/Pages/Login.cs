@@ -31,7 +31,7 @@ namespace BookswagonAzureTest.Pages
 
         public void LoginPage()
         {
-            loginBtn.Click();
+          //  loginBtn.Click();
             Thread.Sleep(6000);
             email.SendKeys(Email);
             password.SendKeys(Password);
