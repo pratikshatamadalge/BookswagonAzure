@@ -60,6 +60,8 @@ namespace BookswagonAzureTest.BaseClass
         [OneTimeTearDown]
         public void TearDown()
         {
+            TestContext.AddTestAttachment(path, "Test Screenshots");
+            TestContext.AddTestAttachment("F:\\VS\\BookswagonAzureTest\\BookswagonAzureTest\\ExtentReport\\index.html", "Extent Report");
             driver.Quit();
         }
     }
