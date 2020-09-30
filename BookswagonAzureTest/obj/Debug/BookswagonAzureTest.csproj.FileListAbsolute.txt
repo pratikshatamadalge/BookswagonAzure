@@ -178,3 +178,4 @@ F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\System.Reflection.Metada
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\System.Text.Encodings.Web.xml
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\chromedriver.exe

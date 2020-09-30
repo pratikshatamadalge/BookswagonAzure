@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
+using System.Threading;
 
 namespace BookswagonAzureTest.Pages
 {
@@ -25,6 +26,7 @@ namespace BookswagonAzureTest.Pages
         public void CartPage()
         {
             driver.SwitchTo().Frame(placeOrderFrame);
+            Thread.Sleep(3000);
             quantity.Clear();
             quantity.SendKeys("2");
             placeorder.Click();
