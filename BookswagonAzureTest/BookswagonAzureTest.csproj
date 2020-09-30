@@ -66,8 +66,13 @@
   <ItemGroup>
     <Compile Include="BaseClass\Base.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Pages\CheckoutLogin.cs" />
     <Compile Include="Pages\Login.cs" />
+    <Compile Include="Pages\Logout.cs" />
     <Compile Include="Pages\SearchBook.cs" />
+    <Compile Include="Pages\ShippingAddress.cs" />
+    <Compile Include="Pages\ShoppingCart.cs" />
+    <Compile Include="Pages\ViewShoppingCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCases\BookswagonTest.cs" />
   </ItemGroup>

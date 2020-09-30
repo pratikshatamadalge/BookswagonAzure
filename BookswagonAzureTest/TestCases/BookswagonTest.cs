@@ -19,5 +19,12 @@ namespace BookswagonAzureTest.TestCases
             SearchBook book = new SearchBook(driver);
             book.SearchBookPage();
         }
+
+        [Test,Order(2)]
+        public void ShoppingCartTest()
+        {
+            ShoppingCart cart = new ShoppingCart(driver);
+            cart.CartPage();
+        }
     }
 }

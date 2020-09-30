@@ -13,7 +13,7 @@ namespace BookswagonAzureTest.Pages
         public IWebDriver driver;
         public Login(IWebDriver driver)
         {
-            //this.driver = driver;
+            this.driver = driver;
             PageFactory.InitElements(driver, this);   
         }
 
