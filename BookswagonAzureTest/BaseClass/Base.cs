@@ -15,7 +15,7 @@ namespace BookswagonAzureTest.BaseClass
     public class Base
     {
         public IWebDriver driver;
-        public const string path = "F:\\VS\\BookswagonAzureTest\\BookswagonAzureTest\\Screenshots";
+       // public const string path = "F:\\VS\\BookswagonAzureTest\\BookswagonAzureTest\\Screenshots";
         public static ExtentReports extent = ReportManager.GetInstance();
         public static ExtentTest test;
         [OneTimeSetUp]
@@ -30,7 +30,10 @@ namespace BookswagonAzureTest.BaseClass
         [TearDown]
         public void Close()
         {
-            try
+            var filepath = $"{ TestContext.CurrentContext.TestDirectory}\\{TestContext.CurrentContext.Test.MethodName}.jpg";
+            ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile(filepath);
+            TestContext.AddTestAttachment(filepath, "Test Screenshots");
+           /* try
             {
                 test = extent.CreateTest(TestContext.CurrentContext.Test.Name);
                 if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
@@ -54,14 +57,12 @@ namespace BookswagonAzureTest.BaseClass
             }
 
             Thread.Sleep(5000);
-            extent.Flush();
+            extent.Flush();*/
         }
 
         [OneTimeTearDown]
         public void TearDown()
         {
-            TestContext.AddTestAttachment(path, "Test Screenshots");
-            TestContext.AddTestAttachment("F:\\VS\\BookswagonAzureTest\\BookswagonAzureTest\\ExtentReport\\index.html", "Extent Report");
             driver.Quit();
         }
     }
