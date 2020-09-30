@@ -33,5 +33,12 @@ namespace BookswagonAzureTest.TestCases
             CheckoutLogin checkout = new CheckoutLogin(driver);
             checkout.CheckoutLoginPage();
         }
+
+        [Test,Order(4)]
+        public void shippingAddressTest()
+        {
+            ShippingAddress shippingAddress = new ShippingAddress(driver);
+            shippingAddress.ShippingAddressPage();
+        }
     }
 }
