@@ -35,10 +35,17 @@ namespace BookswagonAzureTest.TestCases
         }
 
         [Test,Order(4)]
-        public void shippingAddressTest()
+        public void ShippingAddressTest()
         {
             ShippingAddress shippingAddress = new ShippingAddress(driver);
             shippingAddress.ShippingAddressPage();
+        }
+
+        [Test,Order(5)]
+        public void ViewShoppingCartTest()
+        {
+            ViewShoppingCart view = new ViewShoppingCart(driver);
+            view.ViewShoppingCartPage();
         }
     }
 }
