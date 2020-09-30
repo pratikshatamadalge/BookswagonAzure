@@ -26,5 +26,12 @@ namespace BookswagonAzureTest.TestCases
             ShoppingCart cart = new ShoppingCart(driver);
             cart.CartPage();
         }
+
+        [Test,Order(3)]
+        public void CheckoutLoginTest()
+        {
+            CheckoutLogin checkout = new CheckoutLogin(driver);
+            checkout.CheckoutLoginPage();
+        }
     }
 }

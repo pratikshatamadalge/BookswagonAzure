@@ -21,25 +21,25 @@ namespace BookswagonAzureTest.Pages
         }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_txtNewRecipientName")]
-        IWebElement receipientName;
+        IWebElement receipientName { get; set; }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_txtNewAddress")]
-        IWebElement address;
+        IWebElement address { get; set; }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_ddlNewState")]
-        IWebElement state;
+        IWebElement state { get; set; }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_txtNewCity")]
-        IWebElement city;
+        IWebElement city { get; set; }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_txtNewPincode")]
         IWebElement pinCode;
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_txtNewMobile")]
-        IWebElement mobileNo;
+        IWebElement mobileNo { get; set; }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_imgSaveNew")]
-        IWebElement saveAndContinueBtn;
+        IWebElement saveAndContinueBtn { get; set; }
 
         public void ShippingAddressPage()
         {

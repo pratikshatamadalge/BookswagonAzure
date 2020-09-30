@@ -14,13 +14,13 @@ namespace BookswagonAzureTest.Pages
         }
 
         [FindsBy(How = How.XPath, Using = "//body/div/div/div/div/div/iframe[1]")]
-        public IWebElement placeOrderFrame;
+        public IWebElement placeOrderFrame { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@class='qtytext']")]
-        public IWebElement quantity;
+        public IWebElement quantity { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@class='btn-red']")]
-        public IWebElement placeorder;
+        public IWebElement placeorder { get; set; }
 
         public void CartPage()
         {
