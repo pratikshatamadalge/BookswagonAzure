@@ -47,5 +47,12 @@ namespace BookswagonAzureTest.TestCases
             ViewShoppingCart view = new ViewShoppingCart(driver);
             view.ViewShoppingCartPage();
         }
+
+        [Test,Order(6)]
+        public void LogoutTest()
+        {
+            Logout logout = new Logout(driver);
+            logout.LogoutPage();
+        }
     }
 }
