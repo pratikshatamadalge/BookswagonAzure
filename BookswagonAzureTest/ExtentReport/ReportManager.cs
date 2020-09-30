@@ -6,7 +6,7 @@
 
     class ReportManager
     {
-        private static ExtentReports extent;
+        /*private static ExtentReports extent;
         private static ExtentHtmlReporter htmlReporter;
 
         /// <summary>
@@ -25,6 +25,6 @@
                 extent.AddSystemInfo("Browser", "Chrome");
             }
             return extent;
-        }
+        }*/
     }
 }
