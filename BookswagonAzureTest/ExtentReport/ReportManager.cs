@@ -16,7 +16,7 @@
         {
             if (extent == null)
             {
-                string reportPath = @"F:\VS\BookswagonAzureTest\BookswagonAzureTest\ExtentReport\index.html";
+                string reportPath = "F:\\VS\\BookswagonAzureTest\\BookswagonAzureTest\\ExtentReport\\index.html";
                 htmlReporter = new ExtentHtmlReporter(reportPath);
                 extent = new ExtentReports();
                 extent.AttachReporter(htmlReporter);

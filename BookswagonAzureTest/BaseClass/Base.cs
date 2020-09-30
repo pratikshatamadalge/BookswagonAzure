@@ -15,7 +15,7 @@ namespace BookswagonAzureTest.BaseClass
     public class Base
     {
         public IWebDriver driver;
-        public const string path = @"F:\VS\BookswagonAzureTest\BookswagonAzureTest\Screenshots";
+        public const string path = "F:\\VS\\BookswagonAzureTest\\BookswagonAzureTest\\Screenshots";
         public static ExtentReports extent = ReportManager.GetInstance();
         public static ExtentTest test;
         [OneTimeSetUp]
