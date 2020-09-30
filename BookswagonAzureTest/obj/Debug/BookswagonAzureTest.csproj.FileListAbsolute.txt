@@ -22,7 +22,6 @@ F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\BookswagonAzureTest.dll.
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\mongocrypt.dll
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\Crc32C.NET.dll
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\DnsClient.dll
-F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\ExtentReports.dll
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\Microsoft.AspNetCore.Authentication.Core.dll
 F:\VS\BookswagonAzureTest\BookswagonAzureTest\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll

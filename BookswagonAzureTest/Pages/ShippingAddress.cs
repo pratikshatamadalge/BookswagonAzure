@@ -33,7 +33,7 @@ namespace BookswagonAzureTest.Pages
         IWebElement city { get; set; }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_txtNewPincode")]
-        IWebElement pinCode;
+        IWebElement pinCode { get; set; }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_txtNewMobile")]
         IWebElement mobileNo { get; set; }

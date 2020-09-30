@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Net.NetworkInformation;
 using System.Threading;
-using AventStack.ExtentReports;
-using AventStack.ExtentReports.MarkupUtils;
+//using AventStack.ExtentReports;
+//using AventStack.ExtentReports.MarkupUtils;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
@@ -17,7 +17,7 @@ namespace BookswagonAzureTest.BaseClass
         public IWebDriver driver;
        // public const string path = "F:\\VS\\BookswagonAzureTest\\BookswagonAzureTest\\Screenshots";
        //public static ExtentReports extent = ReportManager.GetInstance();
-        public static ExtentTest test;
+        //public static ExtentTest test;
         [OneTimeSetUp]
         public void Setup()
         {

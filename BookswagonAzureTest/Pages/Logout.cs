@@ -16,7 +16,7 @@ namespace BookswagonAzureTest.Pages
         }
 
         [FindsBy(How = How.Id, Using = "ctl00_lnkbtnLogout")]
-        IWebElement logoutBtn;
+        IWebElement logoutBtn { get; set; }
 
         public void LogoutPage()
         {

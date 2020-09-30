@@ -15,7 +15,7 @@ namespace BookswagonAzureTest.Pages
         }
 
         [FindsBy(How = How.XPath, Using = "//a[@class='btn-red']")]
-        IWebElement continueBtn;
+        IWebElement continueBtn { get; set; }
 
         public void CheckoutLoginPage()
         {

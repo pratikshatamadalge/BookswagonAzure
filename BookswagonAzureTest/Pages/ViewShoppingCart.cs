@@ -17,10 +17,10 @@ namespace BookswagonAzureTest.Pages
         }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_ShoppingCart_lvCart_txtGiftMessage")]
-        IWebElement giftMessage;
+        IWebElement giftMessage { get; set; }
 
         [FindsBy(How = How.Id, Using = "ctl00_cpBody_ShoppingCart_lvCart_savecontinue")]
-        IWebElement saveAndContinueBtn1;
+        IWebElement saveAndContinueBtn1 { get; set; }
 
         public void ViewShoppingCartPage()
         {
