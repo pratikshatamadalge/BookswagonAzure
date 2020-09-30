@@ -17,7 +17,7 @@ namespace BookswagonAzureTest.Pages
             PageFactory.InitElements(driver, this);   
         }
 
-        [FindsBy(How = How.LinkText, Using = "Login")]
+        [FindsBy(How = How.XPath, Using = "//div[@id='header']//li[1]")]
         IWebElement loginBtn{ get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@name='ctl00$phBody$SignIn$txtEmail']")]
