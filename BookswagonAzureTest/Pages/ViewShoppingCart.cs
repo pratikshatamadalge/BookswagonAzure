@@ -24,7 +24,7 @@ namespace BookswagonAzureTest.Pages
 
         public void ViewShoppingCartPage()
         {
-            giftMessage.SendKeys("");
+            giftMessage.SendKeys(GiftMessage);
             saveAndContinueBtn1.Click();
             Thread.Sleep(1000);
         }

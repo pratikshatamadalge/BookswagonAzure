@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using System.Configuration;
+using System.Threading;
 
 namespace BookswagonAzureTest.Pages
 {
@@ -50,6 +51,7 @@ namespace BookswagonAzureTest.Pages
             pinCode.SendKeys(Pincode);
             mobileNo.SendKeys(MobileNo);
             saveAndContinueBtn.Click();
+            Thread.Sleep(2000);
         }
     }
 }

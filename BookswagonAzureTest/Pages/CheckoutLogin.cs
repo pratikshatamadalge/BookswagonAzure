@@ -19,7 +19,7 @@ namespace BookswagonAzureTest.Pages
 
         public void CheckoutLoginPage()
         {
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
             continueBtn.Click();
         }
     }
